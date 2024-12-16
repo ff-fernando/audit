@@ -1,0 +1,24 @@
+### create a customer
+POST http://localhost:3000/customer HTTP/1.1
+content-type: application/json
+
+{
+    "name": "John Doe",
+    "cpf": "486.550.620-90"
+}
+
+### update customer
+
+@id = f7e8fea0-d25a-4964-90fd-f101d9d4d40d
+PUT http://localhost:3000/customer/{{id}} HTTP/1.1
+content-type: application/json
+
+{
+    "name": "John Wick",
+    "cpf": "486.550.620-90"
+}
+
+### get all customers
+GET http://localhost:3000/customer HTTP/1.1
+
+###
